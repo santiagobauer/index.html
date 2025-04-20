@@ -1,69 +1,163 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>SOTACOM - Mision Aurora</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TELECOSMONAUTA</title>
+
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza a tu archivo CSS -->
+
 </head>
+
 <body>
 
-  <h1>SOTACOM</h1>
-  <h2>Mision Aurora</h2>
 
-  <p>
-    Bienvenido al sitio oficial de SOTACOM, una iniciativa tecnico-cientifica nacida en Liniers, Buenos Aires, Argentina. 
-    Nuestro objetivo es explorar, aprender y construir soluciones tecnologicas que integren electronica, computacion y 
-    pensamiento espacial. 
-  </p>
+    <header>
 
-  <h3>Quienes somos</h3>
-  <p>
-    SOTACOM fue fundada por entusiastas de la tecnologia, la radio, la electronica y la exploracion espacial. 
-    Nuestro enfoque es experimental y educativo, documentando cada paso para compartirlo con la comunidad. 
-  </p>
+        <h1>SLLB TELECOSMONAUTA</h1>
 
-  <h3>Sobre la mision AURORA</h3>
-  <p>
-    Aurora es una mision tecnica, una hoja de ruta y un estado mental. Su objetivo es desarrollar dispositivos, 
-    antenas, estaciones de recepcion, y sistemas de medicion para estudiar fenomenos naturales y artificiales 
-    en el espectro electromagnetico.
-  </p>
+        <nav>
 
-  <p>
-    AURORA busca construir conocimiento desde el garage, utilizando herramientas accesibles, reciclaje de 
-    componentes y pensamiento critico. Desde estaciones VHF/UHF hasta modulos de voz autonomos, cada componente 
-    es parte de una arquitectura modular e inteligente.
-  </p>
+            <ul>
 
-  <h3>Objetivos</h3>
-  <ul>
-    <li>Desarrollar estaciones de monitoreo y escucha</li>
-    <li>Explorar la comunicacion entre dispositivos locales y remotos</li>
-    <li>Aplicar inteligencia artificial para asistencia en sistemas de voz</li>
-    <li>Conectar la pasion por el cosmos con soluciones reales</li>
-  </ul>
+                <li><a href="#inicio">Inicio</a></li>
 
-  <h3>Multimedia</h3>
-  <p>
-    Video de presentacion de la mision: <br>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Ver en YouTube</a>
-  </p>
+                <li><a href="#proyectos">Proyectos</a></li>
 
-  <p>
-    Imagenes y documentos proximamente disponibles.
-  </p>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
 
-  <h3>Contacto</h3>
-  <p>
-    Email: lucasbauer.sam@gmail.com<br>
-    Instagram: <a href="https://instagram.com/sotacomok" target="_blank">@sotacomok</a>
-  </p>
+                <li><a href="#blog">Blog</a></li>
 
-  <hr>
+                <li><a href="#contacto">Contacto</a></li>
 
-  <p>
-    Este sitio fue desarrollado utilizando GitHub Pages.<br>
-    Ultima actualizacion: Abril 2025.
-  </p>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <section id="inicio">
+
+        <h2>Bienvenido</h2>
+
+        <p>Explora mis proyectos y aprende más sobre mí y mi trabajo en tecnología y ciencia.</p>
+
+        <img src="banner.jpg" alt="Banner de Portafolio" class="banner"> <!-- Cambia la imagen del banner -->
+
+    </section>
+
+
+    <section id="proyectos">
+
+        <h2>Proyectos</h2>
+
+        <div class="proyecto">
+
+            <img src="proyecto1.jpg" alt="Proyecto 1">
+
+            <h3>Título del Proyecto 1</h3>
+
+            <p>Descripción breve del proyecto 1.</p>
+
+            <a href="enlace-proyecto1.html">Ver Proyecto</a>
+
+        </div>
+
+        <div class="proyecto">
+
+            <img src="proyecto2.jpg" alt="Proyecto 2">
+
+            <h3>Título del Proyecto 2</h3>
+
+            <p>Descripción breve del proyecto 2.</p>
+
+            <a href="enlace-proyecto2.html">Ver Proyecto</a>
+
+        </div>
+
+        <!-- Agrega más proyectos según sea necesario -->
+
+    </section>
+
+
+    <section id="sobre-mi">
+
+        <h2>Sobre Mí</h2>
+
+        <p>Biografía breve sobre ti, tus habilidades y experiencia.</p>
+
+        <img src="mi-foto.jpg" alt="Foto Profesional" class="foto-profesional"> <!-- Cambia la imagen -->
+
+    </section>
+
+
+    <section id="blog">
+
+        <h2>Blog</h2>
+
+        <article>
+
+            <h3>Título del Artículo 1</h3>
+
+            <p>Resumen del artículo 1. <a href="articulo1.html">Leer más</a></p>
+
+        </article>
+
+        <article>
+
+            <h3>Título del Artículo 2</h3>
+
+            <p>Resumen del artículo 2. <a href="articulo2.html">Leer más</a></p>
+
+        </article>
+
+        <!-- Agrega más artículos según sea necesario -->
+
+    </section>
+
+
+    <section id="contacto">
+
+        <h2>Contacto</h2>
+
+        <form action="enviar.php" method="post"> <!-- Cambia la acción según tu backend -->
+
+            <label for="nombre">Nombre:</label>
+
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+        <p>Email: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+
+        <p>Sígueme en <a href="https://instagram.com/tuusuario" target="_blank">Instagram</a></p>
+
+    </section>
+
+
+    <footer>
+
+        <p>Este sitio fue desarrollado utilizando GitHub Pages. Última actualización: Abril 2025.</p>
+
+    </footer>
+
 
 </body>
+
 </html>
