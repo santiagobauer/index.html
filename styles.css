@@ -1,129 +1,94 @@
-/* Reset de márgenes y paddings */
+/* styles.css */
+
+:root {
+  --bg: #0b0c10;
+  --text: #c5c6c7;
+  --accent: #66fcf1;
+  --header: #1f2833;
+  --font: 'Courier New', monospace;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Estilo del cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+  padding: 2rem;
 }
 
-/* Estilo del encabezado */
 header {
-    background: #007BFF; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 20px 0;
-    text-align: center;
+  background: var(--header);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
 }
 
-nav ul {
-    list-style: none;
+header h1 {
+  font-size: 2rem;
+  color: var(--accent);
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+header p {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+nav {
+  margin-top: 1rem;
 }
 
-/* Sección de inicio */
-#inicio {
-    padding: 20px;
-    text-align: center;
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: bold;
+  transition: opacity 0.3s;
 }
 
-.banner {
-    max-width: 100%;
-    height: auto;
+nav a:hover {
+  opacity: 0.6;
 }
 
-/* Sección de proyectos */
-#proyectos {
-    padding: 20px;
-    background: #fff;
+main section {
+  margin-bottom: 2rem;
 }
 
-.proyecto {
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
+h2 {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.proyecto img {
-    max-width: 100%;
-    height: auto;
+article {
+  background: #1a1a1d;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
 }
 
-/* Sección sobre mí */
-#sobre-mi {
-    padding: 20px;
-    background: #fff;
-    text-align: center;
+article h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
-.foto-profesional {
-    max-width: 150px;
-    border-radius: 50%; /* Hace la imagen circular */
+time {
+  font-size: 0.9rem;
+  opacity: 0.6;
 }
 
-/* Sección de blog */
-#blog {
-    padding: 20px;
-    background: #fff;
-}
-
-/* Sección de contacto */
-#contacto {
-    padding: 20px;
-    background: #fff;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px;
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #0056b3; /* Color al pasar el mouse */
-}
-
-/* Estilo del pie de página */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #007BFF;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  opacity: 0.5;
 }
