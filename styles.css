@@ -1,0 +1,129 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background: #007BFF; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sección de inicio */
+#inicio {
+    padding: 20px;
+    text-align: center;
+}
+
+.banner {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sección de proyectos */
+#proyectos {
+    padding: 20px;
+    background: #fff;
+}
+
+.proyecto {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sección sobre mí */
+#sobre-mi {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.foto-profesional {
+    max-width: 150px;
+    border-radius: 50%; /* Hace la imagen circular */
+}
+
+/* Sección de blog */
+#blog {
+    padding: 20px;
+    background: #fff;
+}
+
+/* Sección de contacto */
+#contacto {
+    padding: 20px;
+    background: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3; /* Color al pasar el mouse */
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #007BFF;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
